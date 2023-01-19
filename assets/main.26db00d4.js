@@ -1211,7 +1211,7 @@ function parseNumberSkeleton(tokens) {
 }
 
 // @generated from time-data-gen.ts
-// prettier-ignore  
+// prettier-ignore
 var timeData = {
     "AX": [
         "H"
@@ -2703,7 +2703,7 @@ var fromCodePoint = hasNativeFromCodePoint
             }
             return elements;
         };
-var fromEntries = 
+var fromEntries =
 // native
 hasNativeFromEntries
     ? Object.fromEntries
@@ -4090,7 +4090,7 @@ function isFormatXMLElementFn(el) {
     return typeof el === 'function';
 }
 // TODO(skeleton): add skeleton support
-function formatToParts(els, locales, formatters, formats, values, currentPluralValue, 
+function formatToParts(els, locales, formatters, formats, values, currentPluralValue,
 // For debugging
 originalMessage) {
     // Hot path for straight simple msg translations
@@ -4735,7 +4735,7 @@ var formatMessage$1 = function (_a, state, messageDescriptor, values, opts) {
     // `id` is a required field of a Message Descriptor.
     invariant(!!msgId, "[@formatjs/intl] An `id` must be provided to format a message. You can either:\n1. Configure your build toolchain with [babel-plugin-formatjs](https://formatjs.io/docs/tooling/babel-plugin)\nor [@formatjs/ts-transformer](https://formatjs.io/docs/tooling/ts-transformer) OR\n2. Configure your `eslint` config to include [eslint-plugin-formatjs](https://formatjs.io/docs/tooling/linter#enforce-id)\nto autofix this issue");
     var id = String(msgId);
-    var message = 
+    var message =
     // In case messages is Object.create(null)
     // e.g import('foo.json') from webpack)
     // See https://github.com/formatjs/formatjs/issues/1914
@@ -5137,9 +5137,9 @@ function createIntl$1(config, cache) {
         onError(new MissingDataError("Missing locale data for locale: \"".concat(locale, "\" in Intl.DateTimeFormat. Using default locale: \"").concat(defaultLocale, "\" as fallback. See https://formatjs.io/docs/react-intl#runtime-requirements for more details")));
     }
     verifyConfigMessages(resolvedConfig);
-    return __assign(__assign({}, resolvedConfig), { formatters: formatters, formatNumber: formatNumber.bind(null, resolvedConfig, formatters.getNumberFormat), formatNumberToParts: formatNumberToParts.bind(null, resolvedConfig, formatters.getNumberFormat), formatRelativeTime: formatRelativeTime.bind(null, resolvedConfig, formatters.getRelativeTimeFormat), formatDate: formatDate.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatDateToParts: formatDateToParts.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatTime: formatTime.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatDateTimeRange: formatDateTimeRange.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatTimeToParts: formatTimeToParts.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatPlural: formatPlural.bind(null, resolvedConfig, formatters.getPluralRules), 
+    return __assign(__assign({}, resolvedConfig), { formatters: formatters, formatNumber: formatNumber.bind(null, resolvedConfig, formatters.getNumberFormat), formatNumberToParts: formatNumberToParts.bind(null, resolvedConfig, formatters.getNumberFormat), formatRelativeTime: formatRelativeTime.bind(null, resolvedConfig, formatters.getRelativeTimeFormat), formatDate: formatDate.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatDateToParts: formatDateToParts.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatTime: formatTime.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatDateTimeRange: formatDateTimeRange.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatTimeToParts: formatTimeToParts.bind(null, resolvedConfig, formatters.getDateTimeFormat), formatPlural: formatPlural.bind(null, resolvedConfig, formatters.getPluralRules),
         // @ts-expect-error TODO: will get to this later
-        formatMessage: formatMessage$1.bind(null, resolvedConfig, formatters), 
+        formatMessage: formatMessage$1.bind(null, resolvedConfig, formatters),
         // @ts-expect-error TODO: will get to this later
         $t: formatMessage$1.bind(null, resolvedConfig, formatters), formatList: formatList.bind(null, resolvedConfig, formatters.getListFormat), formatListToParts: formatListToParts.bind(null, resolvedConfig, formatters.getListFormat), formatDisplayName: formatDisplayName.bind(null, resolvedConfig, formatters.getDisplayNames) });
 }
@@ -14136,7 +14136,7 @@ const PreLoader = () => /* @__PURE__ */ jsx("div", {
 
 const index = '';
 
-const App = React.lazy(() => __vitePreload(() => import('./App.beebf72a.js'),true?["assets/App.beebf72a.js","assets/App.9d289b17.css"]:void 0));
+const App = React.lazy(() => __vitePreload(() => import('./App.beebf72a.js'),true?["./assets/App.beebf72a.js","./assets/App.9d289b17.css"]:void 0));
 client.createRoot(document.getElementById("root")).render(/* @__PURE__ */ jsx(ConfigProvider$1, {
   theme: {
     token: {
